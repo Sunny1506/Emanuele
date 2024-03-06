@@ -8,7 +8,11 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
-private void BotaoStartButtonClicked (object sender, EventArgs args)
+private void ButtonStartButtonClicked (object sender, EventArgs args)
+{
+	
+}
+private void ButtonAboutButtonClicked(object sender, EventArgs args)
 {
 	
 }
