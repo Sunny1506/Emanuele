@@ -5,4 +5,42 @@
              BackgroundColor ="#8cd779"
              Shell.NavBarIsVisible="false">
 
+<Grid>
+   <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="60"/>     
+        <RowDefinition Height="60"/>
+        <RowDefinition Height="60"/>
+        <RowDefinition Height="60"/>
+    </Grid.RowDefinitions>  
+
+    <Frame BackgroundColor="#8FC1B5"
+           CornerRadius="20"
+           Margin="5,10"
+           VerticalOptions="Fill"
+           Grid.Row="0">
+ 
+   <Label x:Name="LabelText"
+          TextColor="White"
+          LineHeight="1.2"
+          HorizontalOptions="Center"
+          VerticalOptions="Center"
+          FontSize="20"/>
+<Button   x:Name="Buttonvermais"
+          Clicked="OnButtonVerMaisCliked"
+          Text="próximo"
+          BackgroundColor="black"
+          TextColor="White"
+          BorderWidth="1"
+          BorderColor="White"
+          FontSize="16"
+          HeightRequest="50"
+          CornerRadius="25"
+          HorizontalOptions="Fill"
+          Grid.Row="1"/>
+
+
+    </Frame>
+</Grid>             
+
              </ContentPage>

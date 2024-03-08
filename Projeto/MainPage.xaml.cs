@@ -19,5 +19,10 @@ private void ButtonAboutButtonClicked(object sender, EventArgs args)
 {
 	  frameAbout.IsVisible = true;
 }
+
+private void ButtonDimissButtonClicked(object sender, EventArgs args)
+{
+	frameAbout.IsVisible= false;
+}
 }
 

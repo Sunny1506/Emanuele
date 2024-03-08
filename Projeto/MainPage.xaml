@@ -2,8 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto.MainPage"
-             BackgroundColor ="#
-             661100"
+             BackgroundColor ="#60966f"
              Shell.NavBarIsVisible="false">
 <Grid>
         <Label Text="LEGADO DE INTRIGAS A HERANÇA DOS GARCIAS"
@@ -53,7 +52,31 @@
                                         <RowDefinition Height="90"/>
                                         <RowDefinition Height="*"/>     
                                         <RowDefinition Height="60"/>
-                                </Grid.RowDefinitions>   
+                                </Grid.RowDefinitions>  
+                                <Label Text="SOBRE" 
+                                       TextColor="White"
+                                       Margin="20"
+                                       FontSize="40"
+                                       HorizontalOptions="Center"
+                                       Grid.Row="0"/> 
+                                       <Label Text="Aplicativo desenvolvido na curso técnico de Desenvolvimento de Sistemas com o objetivo da compreensão da linguagem e programação C#, além de aprender como utilizar o XAML, com conceitos de Programação Orientada a Objeto, .NET MAUI, UI(USER INFACE), ALGORITMOS, E UX (USER EXPERINCE) Trabalho desenvolvido por MARIA ANGÉLICA DE FREITAS DE SOUZA e EMANUELE BRUM ROSSI, com o auxílio do Professor THIAGO MACEDO"
+                                              CharacterSpacing="1"
+                                              LineHeight="1.5"
+                                              TextColor="White"
+                                              HorizontalOptions="Center"
+                                              VerticalOptions="Center"
+                                              FontSize="15"
+                                              Grid.Row="1"/>
+
+                                        <Button Text="VOLTAR"
+                                                Clicked="ButtonDimissButtonClicked" 
+                                                HeightRequest="50"
+                                                CornerRadius="25"
+                                                BackgroundColor="#b2614"
+                                                TextColor="White"
+                                                Margin="0,0,0,10"
+                                                FontSize="18"
+                                                Grid.Row="2"/>   
                        
                         </Grid>  
                 </Frame>
