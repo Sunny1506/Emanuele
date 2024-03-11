@@ -26,6 +26,7 @@
           HorizontalOptions="Center"
           VerticalOptions="Center"
           FontSize="20"/>
+    </Frame>
 <Button   x:Name="Buttonvermais"
           Clicked="OnButtonVerMaisCliked"
           Text="próximo"
@@ -38,9 +39,71 @@
           CornerRadius="25"
           HorizontalOptions="Fill"
           Grid.Row="1"/>
+ <Button   x:Name="ButtonResposta01"
+          Clicked="OnButton01Clicked"
+          BackgroundColor="black"
+          TextColor="White"
+          BorderColor="White"
+          FontSize="16"
+          Margin="5,10"
+          HeightRequest="50"
+          CornerRadius="25"
+          HorizontalOptions="Fill"
+          Grid.Row="2"/>
+<Button   x:Name="ButtonResposta02"
+          Clicked="OnButton02Clicked"
+          BackgroundColor="black"
+          TextColor="White"
+          BorderColor="White"
+          FontSize="16"
+          Margin="5,10"
+          HeightRequest="50"
+          CornerRadius="25"
+          HorizontalOptions="Fill"
+          Grid.Row="3"/>
+ <Button   x:Name="ButtonResposta03"
+          Clicked="OnButton03Clicked"
+          BackgroundColor="black"
+          TextColor="White"
+          BorderColor="White"
+          FontSize="16"
+          Margin="5,10"
+          HeightRequest="50"
+          CornerRadius="25"
+          HorizontalOptions="Fill"
+          Grid.Row="4"/>
+<Frame x:Name="frameGamerOver"
+       IsVisible= "false"
+        BackgroundColor="#8FC1B5"
+        BorderColor="White"
+        Margin="5,10"
+        Grid.Row="1"
+        Grid.RowSpan="4"/>
+<VerticalStackLayout>
+<Label Text="Fim do caso!"
+       TextColor="black"
+       Margin="20"
+       FontSize="40"
+       HorizontalOptions="Center"
+       VerticalOptions="Center"/>
+<Button Text=" Mudar para tela inicial"
+        Clicked="OnGameOverButtonClicked"
+        BackgroundColor="Black"
+        TextColor="White"
+        CornerRadius="10"
+        FontSize="16"
+        HorizontalOptions="Fill"
+        HeightRequest="50"/>
 
 
-    </Frame>
-</Grid>             
+
+
+
+
+</VerticalStackLayout>
+</Frame>
+</Grid>
+
+
 
              </ContentPage>
