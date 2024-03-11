@@ -1,6 +1,6 @@
 public class HistoryStep
 {
-public interface Id; // Esse é o código da parte da história que deve ser unico para cada historyStep
+public int Id; // Esse é o código da parte da história que deve ser unico para cada historyStep
 public string? Texto; //Atributo para guardar um texto qu vai aparecer para o usuario
 public bool TemImagem= false;// atributo para dizer se tem ou não uma imagem para mostrar
 public string? UrlDaImagem;// em caso de ter imagem esse atributo vai guardar ou o endereço da imagem ou o nome da imagem
