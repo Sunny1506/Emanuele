@@ -76,6 +76,70 @@ public partial class GamePage : ContentPage
 		TemResposta=false,
 		HeroIsDead=true
 		});
+		historia.Add(new HistoryStep()
+		{
+			Id = 100,
+			Texto = "Carlos e eu crescemos juntos na casa de Abuela, depois que a mãe de Carlos o deixou com a avó e não voltou mais. Sempre mantivemos uma rixa, que no começo era normal por sermos crianças, mas então fomos crescendo e percebi que Carlos realmente não suportava a minha presença. Seja por ciúmes ou por disputar a herança da abuela, nunca soube que ele seria capaz de tirar a vida de nossa amada avó. ",
+			TemResposta=false
+		});
+		historia.Add(new HistoryStep()
+		{
+			Id = 101,
+			Texto = "Na manhã seguinte do triste acontecimento, Carlos já não estava mais na mansão. Suas coisas e sua mala não estavam mais no seu quarto. As investigações encontraram uma carta na gaveta da avó. Gostaria de ler a carta?",
+            TemResposta=true
+		});
+		historia.Add(new HistoryStep()
+		{
+			Id = 102,
+			Texto = "Para todos os Garcia. Pensei em muito tempo no que deveria fazer, mas na manhã, antes do acontecido, depois de provar a minha hipótese, de que Alejandro sempre foi o neto preferido, embora seja eu que abri mão dos meus planos e sonhos para se adequar a vida na mansão. Os homens que aqui vieram pela manhã traziam consigo o testamento para abuela assinar, que garantia boa parte da herança para meu primo mais novo, que sequer merecia morar nessa casa. Nesse momento estou bem longe, mas o que posso dizer é que abuela  teve uma morte passiva, assim como foi a falta de sua presença e atenção em minha vida.",
+            TemResposta=true
+		});
+        historia.Add(new HistoryStep()
+		{
+			Id = 103,
+			Texto = "(FIM DO CASO!)",
+            TemResposta=false,
+			HerolIsDead=true
+		});
+		 historia.Add(new HistoryStep()
+		{
+			Id = 104,
+			Texto = "(FIM DO CASO!)",
+            TemResposta=false,
+			HerolIsDead=true
+		});
+		 historia.Add(new HistoryStep()
+		{
+			Id = 250,
+			Texto = "Fazia tempo que não via minha tia Tereza. Sua presença era estranha e suspeita, voltar anos mais tarde, sem dar dar notícias, e ainda querer a compreensão de Carlos? Será que ela mataria minha vó?",
+            TemResposta=true	
+		});
+		 historia.Add(new HistoryStep()
+		{
+			Id = 251,
+			Texto = "Descobrimos que sua visita inesperada realmente tinha um motivo, Tia Tereza tinha segredos, antes de ir embora deixou na mansão parte do dinheiro que seu marido possuía, antes de morrer, mas com a pressa de sair logo da casa, acabou deixando o saco com as notas no assoalho do quarto de Abuela. Aúnica forma de recuperar o dinheiro perdido era matar nossa avó",
+            TemResposta=false	
+		});
+		 historia.Add(new HistoryStep()
+		{
+			Id = 252,
+			Texto = "Tia Tereza, trouxe de onde vinha, ainda desconhecido, uma torta que parecia muito gostosa. O que Abuela não sabia, era que a torta era preenchida de amendoim, alimento que minha avó era alérgica. Entretando percebeu tarde demais e começou a ter uma asfixia. Minha tia foi embora novamente, mas dessa vez , o dinheiro do assoalho não foi encontrado.",
+            TemResposta=false	
+		});
+		 historia.Add(new HistoryStep()
+		{
+			Id = 253,
+			Texto = "(FIM DO CASO!)",
+            TemResposta=false,	
+			HeroisDead=true
+		});
+		 historia.Add(new HistoryStep()
+		{
+			Id = 254,
+			Texto = "Descobrimos com sua visita inesperada, que sempre tentou contato, mas por proibição de nossa própria avó, Carlos foi privado de ter sua mãe por perto. Na verdade, por mais que fosse difícil, Tia Tereza nunca teria abandonado seu filho, mas abuela a expulsou, porque a culpava da morte do filho . Carlos também descobriu que as cartas pela morte do filho. Carlos descobriu também que sua abuela escondia as cartas que a mãe enviava, na gaveta em que era proibida ser aberta. Com essa visita repentina, abuela ficou com medo da reação de Carlos e morreu com uma parada cardíaca.",
+            TemResposta=false,	
+			HeroisDead=true
+		});
 	}
 
 
@@ -86,7 +150,7 @@ public partial class GamePage : ContentPage
 	}
 	void TrocaHistoryStepAtual(int id)
 	{
-		HistoryStepAtual = historia.Where(d => d.IdLevelResposta01 == id).First;
+		HistoryStepAtual = historia.Where(d => d.IdLevelResposta01 == id).First();
 		PreencherPagina();
 	}
 		void PreencherPagina()
