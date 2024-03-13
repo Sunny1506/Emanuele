@@ -4,30 +4,29 @@
              x:Class="Projeto.GamePage"
              BackgroundColor ="#8cd779"
              Shell.NavBarIsVisible="false">
+       <Grid>
+              <Grid.RowDefinitions>
+                     <RowDefinition Height="*"/>
+                     <RowDefinition Height="60"/>     
+                     <RowDefinition Height="60"/>
+                     <RowDefinition Height="60"/>
+                     <RowDefinition Height="60"/>
+              </Grid.RowDefinitions>  
 
-<Grid>
-   <Grid.RowDefinitions>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="60"/>     
-        <RowDefinition Height="60"/>
-        <RowDefinition Height="60"/>
-        <RowDefinition Height="60"/>
-    </Grid.RowDefinitions>  
-
-    <Frame BackgroundColor="#8FC1B5"
-           CornerRadius="20"
-           Margin="5,10"
-           VerticalOptions="Fill"
-           Grid.Row="0">
- 
-   <Label x:Name="LabelText"
-          TextColor="White"
-          LineHeight="1.2"
-          HorizontalOptions="Center"
-          VerticalOptions="Center"
-          FontSize="20"/>
+       <Frame BackgroundColor="#8FC1B5"
+              CornerRadius="20"
+              Margin="5,10"
+              VerticalOptions="Fill"
+              Grid.Row="0">
+       
+       <Label x:Name="labelTexto"
+              TextColor="White"
+              LineHeight="1.2"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              FontSize="20"/>
     </Frame>
-<Button   x:Name="Buttonvermais"
+<Button   x:Name="buttonVerMais"
           Clicked="OnButtonVerMaisCliked"
           Text="próximo"
           BackgroundColor="black"
@@ -39,7 +38,7 @@
           CornerRadius="25"
           HorizontalOptions="Fill"
           Grid.Row="1"/>
- <Button   x:Name="ButtonResposta01"
+ <Button   x:Name="buttonResposta01"
           Clicked="OnButton01Clicked"
           BackgroundColor="black"
           TextColor="White"
@@ -50,7 +49,7 @@
           CornerRadius="25"
           HorizontalOptions="Fill"
           Grid.Row="2"/>
-<Button   x:Name="ButtonResposta02"
+<Button   x:Name="buttonResposta02"
           Clicked="OnButton02Clicked"
           BackgroundColor="black"
           TextColor="White"
@@ -61,7 +60,7 @@
           CornerRadius="25"
           HorizontalOptions="Fill"
           Grid.Row="3"/>
- <Button   x:Name="ButtonResposta03"
+ <Button   x:Name="buttonResposta03"
           Clicked="OnButton03Clicked"
           BackgroundColor="black"
           TextColor="White"
@@ -72,13 +71,25 @@
           CornerRadius="25"
           HorizontalOptions="Fill"
           Grid.Row="4"/>
-<Frame x:Name="frameGamerOver"
+ <Button x:Name="Voltar"
+         Clicked="OnButtonBackClicked"
+         Text="Voltar"
+          BackgroundColor="black"
+          TextColor="White"
+          BorderColor="White"
+          FontSize="16"
+          Margin="5,10"
+          HeightRequest="50"
+          CornerRadius="25"
+          HorizontalOptions="Fill"
+          Grid.Row="2"/>        
+<Frame x:Name="frameGameOver"
        IsVisible= "false"
         BackgroundColor="#8FC1B5"
         BorderColor="White"
         Margin="5,10"
         Grid.Row="1"
-        Grid.RowSpan="4"/>
+        Grid.RowSpan="4">
 <VerticalStackLayout>
 <Label Text="Fim do caso!"
        TextColor="black"

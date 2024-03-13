@@ -2,15 +2,20 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto.MainPage"
-             BackgroundColor ="#60966f"
+             BackgroundColor ="Black"
              Shell.NavBarIsVisible="false">
 <Grid>
+        <Image Source= "abuela.jpg"
+               Opacity=".5"
+               Aspect= "AspectFill"/>
+
         <Label Text="LEGADO DE INTRIGAS A HERANÇA DOS GARCIAS"
-                TextColor="#201658"
+                TextColor="#ebb434"
                 Margin="10,10"
                 FontSize="25"
-                FontFamily="Mexicanum"
-                VerticalOptions="FillAndExpand" 
+                LineHeight="2"
+                FontFamily="Flowers"
+                VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="Center"/>
         <VerticalStackLayout 
                 VerticalOptions="End"
@@ -26,7 +31,7 @@
                         FontSize="16"
                         Margin="0,0,0,10"
                         VerticalOptions="End"
-                        BackgroundColor="#1D24CA"/>  
+                        BackgroundColor="#ebb434"/>  
                 <Button Text= "Sobre"   
                         Clicked=  "ButtonAboutButtonClicked"  
                         BorderWidth="1"
@@ -35,7 +40,7 @@
                         FontSize="16"
                         Margin="0,0,0,10"
                         VerticalOptions="End"
-                        BackgroundColor="#589A8D"/>
+                        BackgroundColor="#f2d113"/>
                         
                 
         </VerticalStackLayout>

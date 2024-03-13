@@ -11,6 +11,7 @@ public string? TextoDaResposta03;//texto do botão 3
 public int IdLevelResposta01;// para qual código do historiStep o primeiro botão de resposta deve levar
 public int IdLevelResposta02;//para qual código do historiStep o segundo botão de resposta deve levar
 public int IdLevelResposta03;//para qual código do historiStep o terceiro botão de resposta deve levar
-public bool HerolIsDead= false;// Atributo para dizer se nesse passo o heroi morreu
+public bool HeroIsDead= false;// Atributo para dizer se nesse passo o heroi morreu
+public bool BackMainPage;
 }
        
