@@ -28,7 +28,8 @@
                         BorderWidth="1"
                         HeightRequest="50"
                         CornerRadius="25"
-                        FontSize="16"
+                        FontSize="14"
+                         FontFamily="Flowers"
                         Margin="0,0,0,10"
                         VerticalOptions="End"
                         BackgroundColor="#ebb434"/>  
@@ -37,7 +38,8 @@
                         BorderWidth="1"
                         HeightRequest="50"
                         CornerRadius="25"
-                        FontSize="16"
+                        FontSize="13"
+                        FontFamily="Flowers"
                         Margin="0,0,0,10"
                         VerticalOptions="End"
                         BackgroundColor="#f2d113"/>
@@ -49,7 +51,7 @@
                         IsVisible= "false"
                         Margin="10,20"
                         CornerRadius="20"
-                        BackgroundColor="#8FC1B5"
+                        BackgroundColor="#f0ba5d"
                         HorizontalOptions="Fill"
                         VerticalOptions="Fill">
                         <Grid> 
@@ -61,7 +63,8 @@
                                 <Label Text="SOBRE" 
                                        TextColor="White"
                                        Margin="20"
-                                       FontSize="40"
+                                       FontSize="20"
+                                        FontFamily="Flowers"
                                        HorizontalOptions="Center"
                                        Grid.Row="0"/> 
                                        <Label Text="Aplicativo desenvolvido na curso técnico de Desenvolvimento de Sistemas com o objetivo da compreensão da linguagem e programação C#, além de aprender como utilizar o XAML, com conceitos de Programação Orientada a Objeto, .NET MAUI, UI(USER INFACE), ALGORITMOS, E UX (USER EXPERINCE) Trabalho desenvolvido por MARIA ANGÉLICA DE FREITAS DE SOUZA e EMANUELE BRUM ROSSI, com o auxílio do Professor THIAGO MACEDO"
