@@ -21,7 +21,7 @@ public partial class GamePage : ContentPage
 		historia.Add(new HistoryStep()
 		{
 			Id=1,
-			Texto= "Oque mais me espanta é a decisão de minha avó, que dentre toda família Garcia deixou todos seus bens em meu nome. O que ela pretendia fazer? Por que eu e não meu primo Carlos? Ou James que sempre foi seu melhor amigo? Ou talvez minha mãe que se manteve firme mesmo após a morte de meu pai e mesmo com tanta desfeita não cortou laços daminha relação com ela. Minha missão foi dada investigar quem foi o  autor crime dentre aqueles que eu chamava de “família” Quem você acha que a matou?",
+			Texto= "Oque mais me espanta é a decisão de minha avó, que dentre toda família Garcia deixou todos seus bens em meu nome. O que ela pretendia fazer? Por que eu e não meu primo Carlos? Ou James que sempre foi seu melhor amigo? Ou talvez minha tia que se manteve firme mesmo após a morte de meu tio e mesmo com tanta desfeita de minha avó deixou Carlos aos cuidados dela. Minha missão foi dada investigar quem foi o  autor crime dentre aqueles que eu chamava de “família” Quem você acha que a matou?",
 			TemResposta= true,
 			TextoDaResposta01="JAMES O MODRDOMO",
 			TextoDaResposta02="CARLOS",
@@ -133,7 +133,7 @@ public partial class GamePage : ContentPage
 			TextoDaResposta02="NÃO",
 			TextoDaResposta03="MUDAR PARA TELA INICIAL",
 			IdLevelResposta01=2001,
-			IdLevelResposta02=2003,
+			IdLevelResposta02=2004,
 			IdLevelResposta03=0
 		});
 		 historia.Add(new HistoryStep()
@@ -159,6 +159,12 @@ public partial class GamePage : ContentPage
 		{
 			Id = 2004,
 			Texto = "Descobrimos com sua visita inesperada, que sempre tentou contato, mas por proibição de nossa própria avó, Carlos foi privado de ter sua mãe por perto. Na verdade, por mais que fosse difícil, Tia Tereza nunca teria abandonado seu filho, mas abuela a expulsou, porque a culpava da morte do filho . Carlos também descobriu que as cartas pela morte do filho. Carlos descobriu também que sua abuela escondia as cartas que a mãe enviava, na gaveta em que era proibida ser aberta. Com essa visita repentina, abuela ficou com medo da reação de Carlos e morreu com uma parada cardíaca.",
+            TemResposta=false,	
+		});
+		historia.Add(new HistoryStep()
+		{
+			Id = 2005,
+			Texto = "(FIM DO CASO!)",
             TemResposta=false,	
 			HeroIsDead=true
 		});

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Projeto.GamePage"
-             BackgroundColor ="#8cd779"
+             BackgroundColor ="#ebb434"
              Shell.NavBarIsVisible="false">
        <Grid>
               <Grid.RowDefinitions>
@@ -13,23 +13,23 @@
                      <RowDefinition Height="60"/>
               </Grid.RowDefinitions>  
 
-       <Frame BackgroundColor="#8FC1B5"
+       <Frame BackgroundColor="#f5e17d"
               CornerRadius="20"
               Margin="5,10"
               VerticalOptions="Fill"
               Grid.Row="0">
        
        <Label x:Name="labelTexto"
-              TextColor="White"
+              TextColor="Black"
               LineHeight="1.2"
               HorizontalOptions="Center"
               VerticalOptions="Center"
-              FontSize="20"/>
+              FontSize="15"/>
     </Frame>
 <Button   x:Name="buttonVerMais"
           Clicked="OnButtonVerMaisCliked"
           Text="próximo"
-          BackgroundColor="black"
+          BackgroundColor="#bf7f24"
           TextColor="White"
           BorderWidth="1"
           BorderColor="White"
@@ -40,7 +40,7 @@
           Grid.Row="1"/>
  <Button   x:Name="buttonResposta01"
           Clicked="OnButton01Clicked"
-          BackgroundColor="black"
+          BackgroundColor="#d48617"
           TextColor="White"
           BorderColor="White"
           FontSize="16"
@@ -51,7 +51,7 @@
           Grid.Row="2"/>
 <Button   x:Name="buttonResposta02"
           Clicked="OnButton02Clicked"
-          BackgroundColor="black"
+          BackgroundColor="#c27200"
           TextColor="White"
           BorderColor="White"
           FontSize="16"
@@ -62,7 +62,7 @@
           Grid.Row="3"/>
  <Button   x:Name="buttonResposta03"
           Clicked="OnButton03Clicked"
-          BackgroundColor="black"
+          BackgroundColor="#bf7f24"
           TextColor="White"
           BorderColor="White"
           FontSize="16"
@@ -74,7 +74,7 @@
  <Button x:Name="Voltar"
          Clicked="OnButtonBackClicked"
          Text="Voltar"
-          BackgroundColor="black"
+          BackgroundColor="#d48617"
           TextColor="White"
           BorderColor="White"
           FontSize="16"
@@ -85,7 +85,7 @@
           Grid.Row="2"/>        
 <Frame x:Name="frameGameOver"
        IsVisible= "false"
-        BackgroundColor="#8FC1B5"
+        BackgroundColor="#ebc460"
         BorderColor="White"
         Margin="5,10"
         Grid.Row="1"
@@ -95,14 +95,16 @@
        TextColor="black"
        Margin="20"
        FontSize="40"
+       FontFamily="Mercado"
        HorizontalOptions="Center"
        VerticalOptions="Center"/>
 <Button Text=" Mudar para tela inicial"
         Clicked="OnGameOverButtonClicked"
-        BackgroundColor="Black"
-        TextColor="White"
+        BackgroundColor="#f1D792"
+        FontFamily="Flowers"
+        TextColor="Black"
         CornerRadius="10"
-        FontSize="16"
+        FontSize="12"
         HorizontalOptions="Fill"
         HeightRequest="50"/>
 

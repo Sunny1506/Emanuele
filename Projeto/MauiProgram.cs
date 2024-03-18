@@ -15,6 +15,7 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 				fonts.AddFont("Mexicanum.otf" , "Mexicanum");
 				fonts.AddFont("Flowers.ttf", "Flowers");
+				fonts.AddFont("Mercado.otf", "Mercado");
 			});
 
 #if DEBUG
