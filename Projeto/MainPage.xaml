@@ -16,7 +16,8 @@
                 LineHeight="1"
                 FontFamily="Mercado"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"/>
         <VerticalStackLayout 
                 VerticalOptions="End"
                 Spacing="10"
@@ -28,6 +29,7 @@
                         BorderWidth="1"
                         HeightRequest="50"
                         CornerRadius="25"
+                        TextColor="White"
                         FontSize="14"
                          FontFamily="Flowers"
                         Margin="0,0,0,10"
@@ -37,6 +39,7 @@
                         Clicked=  "ButtonAboutButtonClicked"  
                         BorderWidth="1"
                         HeightRequest="50"
+                        TextColor="White"
                         CornerRadius="25"
                         FontSize="13"
                         FontFamily="Flowers"
